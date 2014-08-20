@@ -1,0 +1,460 @@
+body{
+    font-family:'Muli',sans-serif;
+    background-color:rgba(180,180,180,0.33);
+}
+.navbar.navbar-fixed-top {
+    background-color:lightgray;
+    height: 10px;
+}
+
+.nav.pull-left a{
+    color:inherit;
+    text-decoration: inherit;
+}
+
+.nav.pull-left .glyphicon {
+    font-size: 14px;
+}
+
+.nav.pull-left #resume {
+    font-size: 12px;
+}
+
+/*Countering bootstrap nav collapse styling*/
+.nav.navbar-nav {
+    background-color: rgba(211,211,211,0.75);
+    padding-top: 0; 
+    margin: 0 -15px;
+}
+
+.navbar-collapse.collapse.in>ul>li{
+    float:none;
+}
+
+.navbar-collapse.collapsing>ul>li{
+    float:none;
+}
+
+.navbar-collapse.collapse>ul>li{
+    float:left;
+}
+
+@media screen and (min-width: 769px){
+    .nav.nav-pills {
+        margin: 0 0;
+    }
+}
+
+/*Countering bootstrap for pills integration*/
+.nav.nav-pills>li.active>a {
+  color:#fff;
+  background-color: #428bca
+}
+
+.nav.nav-pills>li.active>a:hover {
+  color:#fff;
+  background-color: #428bca
+}
+
+.nav.nav-pills>li+li{
+    margin-left: 0;
+}
+
+.nav.nav-pills>li>a {
+  color:#428bca;
+  text-decoration:none;
+}
+
+.nav.nav-pills>li>a:hover {
+  background-color:#eee;
+  text-decoration:none;
+}
+
+.jumbotron {
+  height: 500px;
+  display:block;
+  margin:0 auto;
+}
+
+.attach {
+    background-attachment: fixed;
+}
+
+.jumbotron .container {
+  position: relative;
+}
+
+.jumbotron h1 {
+  font-size: 48px;  
+  font-weight: bold;
+}
+
+#home {
+    background-image:url('/res/jumbotrons/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#FFF;
+    background-position-y:-10%; 
+    background-position-x:100%;
+}
+
+#home .container{
+    top:50px;
+    padding-left: 5rem;
+}
+
+#home h1{
+}
+
+@media screen and (max-width: 768px){
+    #home h1{
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5% 10% 10% 5%;
+        border-radius: 20px;
+    }
+}
+
+#greeting {
+    font-size: 20px; 
+    color: #fff;
+    //background-color: rgba(71,71,71,0.5);
+}
+
+.learn-more {
+    background-color: #f7f7f7;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.learn-more h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}
+
+#projects {
+    background-image:url('/res/jumbotrons/projects.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:85%;
+    background-position-x:30%;
+    color:black;
+    font-style: italic;
+}
+
+#projects .container{ 
+    color:whitesmoke;
+}
+
+#myProjects {
+  position:relative;
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+
+#myProjects .container{
+  height:auto;
+  overflow: auto;
+}
+
+#myProjects .container::-webkit-scrollbar {
+  display: none;
+}
+
+#myProjects #create{
+  position: relative;
+  bottom: 3rem;
+  padding: 10px;
+  border:5px solid darkgray;
+  border-radius:5rem;
+  color:#159915;
+  transition-duration:0.4s;
+  transition-property:border-color,background-color;
+}
+
+#myProjects #create:hover{
+  border-color:#159915;
+  background-color: rgb(199,217,199);
+  text-decoration: none;
+}
+
+#myProjects #sort{
+  position: relative;
+  padding: 10px;
+  border:5px solid darkgray;
+  border-radius:5rem;
+  color:#159915;
+  transition-duration:0.4s;
+  transition-property:border-color,background-color;
+}
+
+#myProjects #sort:hover{
+  border-color:#159915;
+  background-color: rgb(199,217,199);
+}
+
+#myProjects #sort a:hover{
+  text-decoration: none;
+}
+
+#myProjects .proj {
+  height:300px;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 10px;
+
+  background-position: center;
+  background-size: cover;
+
+  border:1px solid black;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+#myProjects .desc {
+  height: 300px;
+  color:white;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 700;
+
+  opacity: 0;
+  background-color: rgba(0,0,0,0.5);
+  transition-property:opacity;
+  transition-duration:0.4s;
+}
+
+#myProjects .desc:hover, #myProjects .desc.hovered {
+  opacity: 1;
+}
+
+#myProjects .desc p {
+  position: relative;
+}
+
+#education {
+    background-image:url('/res/jumbotrons/education.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:65%;
+    background-position-y:20%;
+    overflow: hidden;
+}
+
+#education h1{
+    font-style: italic;
+    color: rgb(172, 65, 34);
+    background-color: rgba(252, 252, 252, 0.75);
+    padding: 5% 10% 10% 5%;
+    border-radius: 20px;
+    position: relative;
+    top: 25rem;
+}
+
+#myEducation .container::-webkit-scrollbar {
+    display: none;
+}
+
+#myEducation h4{
+    text-align: center;
+}
+
+#myEducation #courses .list-group-item {
+    text-align: center;
+}
+
+#experience {
+    background-image: url('/res/jumbotrons/experience.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:50%;
+    background-position-x:50%;
+}
+
+#experience h1{
+    font-style: italic;
+    text-shadow:1px 1px white;
+    color:rgb(119,119,119);
+}
+
+@media screen and (max-width: 768px){
+    #experience h1{
+        position: relative;
+        //width: 300px;
+        top: -5rem;
+        //left: -5rem;
+        font-size: 42px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 769px){
+    #experience h1{
+        float: left;
+        width: 30rem;
+        padding-left: 5rem;
+    }
+}
+
+#myExperience{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#myExperience .carousel-indicators {
+    bottom: 0;
+}
+
+#myExperience .carousel-caption {
+    color:black;
+    text-shadow: none;
+    font-size:18px;
+    top:2rem;
+    right:1rem;
+    left:40rem;
+    overflow:auto;
+    z-index: 0;
+}
+
+#myExperience .carousel-control{
+    opacity: 0.2;
+}
+
+#myExperience .carousel-control:hover {
+    opacity: 0.4;
+}
+
+#myExperience .carousel-caption::-webkit-scrollbar {
+  display: none;
+}
+
+#contact {
+    background-image: url('/res/jumbotrons/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:70%;
+}
+
+#contact h1 {
+    text-shadow:1px 1px black;
+  }
+
+@media screen and (max-width: 768px){
+    #contact h1{
+        position: relative;
+        top: -1.0rem;
+        left: -2.8rem;
+        width:25rem;
+        color:whitesmoke;
+    }
+}
+
+@media screen and (min-width: 769px){
+    #contact h1{
+        color: rgb(167,167,167);
+    }
+}
+
+#myContact {
+    margin-top: 30px;
+}
+
+#myContact > .container::-webkit-scrollbar {
+  display: none;
+}
+
+#myContact #links {
+    font-size: 24px;
+    font-style: italic;
+}
+
+#myContact #links > ul {
+    list-style-type: none;
+}
+
+@media screen and (min-width: 992px){
+    #myContact .link img {
+        width:128px;
+        height:128px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    #myContact .link img {
+        width: 20%;
+        height:auto;
+        float: left;
+        margin-left: 0;
+        padding-bottom: 5%;
+    }
+
+    #myContact #links ul {
+        padding-left: 0;
+    }
+    
+    #myContact .icon_description {
+        display: none;
+    }
+
+    #myContact iframe {
+        max-width: 80%!important;
+        float: left!important;
+        height:300px!important;
+    }
+}
+
+#myContact .icon_description {
+    position: relative;
+    left: 5%;
+}
+
+#myContact #form-container {
+    width: auto;
+    max-width: 800px;
+}
+#myContact .form-group {
+  margin-bottom: 8px;
+}
+
+#myContact #contact_form p, #myContact #contact_form h2 {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+     
+#myContact #feedbackForm {
+  font-size: 12px;
+}
+
+#myContact #captcha{
+    display: block;
+    margin: 0 auto;
+}
+
+#myContact .btn-sm{
+    display: table;
+    margin: 10px auto -20px auto;
+}
+
+.footer {
+    position: relative;
+    height:120px;
+}
+
+.footer h5 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer a:hover{
+    text-decoration: none;
+}
+
+.footer #copyright {
+    font-size:14px;
+    font-style: italic;
+}
