@@ -42,7 +42,7 @@ window.onload=function(){
 	    else if (time >= 18)
 	        return "Hope you're enjoying your evening!";
 	    else if (time >= 0 && time < 6)
-	    	return "I'm a night owl too! What brings you to my site at " + date.toLocaleTimeString() + "?";
+	    	return "I'm a night owl too! What brings you to my site at " + date.toLocaleTimeString().replace(/:\d+ /, ' ') + "?";
 	    else
 	        return "Hope you have a great day today!";
 	}
