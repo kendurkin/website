@@ -160,6 +160,13 @@ body{
     text-shadow: 1px 1px white;
 }
 
+#projects h1 {
+border-radius: 20px;
+background: rgba(255, 255, 255, 0.5);
+width: 60%;
+padding: 1% 1% 1% 1%;
+}
+
 #myProjects {
   position:relative;
   margin-top:50px;
