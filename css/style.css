@@ -90,12 +90,12 @@ body{
 }
 
 #home {
-    background-image:url('/res/jumbotrons/home.jpg');
+    background-image: url('/res/jumbotrons/new-home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color:#FFF;
-    background-position-y:-10%; 
-    background-position-x:100%;
+    background-position-y: 20%;
+    background-position-x: 35%; 
 }
 
 #home .container{
@@ -104,13 +104,25 @@ body{
 }
 
 #home h1{
+  border-radius: 20px;
+  background: rgba(0,0,0,0.5);
+}
+
+@media screen and (min-width:769px){
+  #home h1{
+    position:relative;
+    padding: 20px 20px;
+    float:left;
+    top:10rem;
+    left:5rem;
+    bottom: 10rem;
+    width:35%;
+  }
 }
 
 @media screen and (max-width: 768px){
     #home h1{
-        background-color: rgba(0, 0, 0, 0.5);
         padding: 5% 10% 10% 5%;
-        border-radius: 20px;
     }
 }
 
