@@ -148,17 +148,16 @@ body{
 }
 
 #projects {
-    background-image:url('/res/jumbotrons/projects.jpg');
+    background-image: url('/res/jumbotrons/new-projects.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y:85%;
-    background-position-x:30%;
     color:black;
     font-style: italic;
 }
 
 #projects .container{ 
-    color:whitesmoke;
+    color: rgb(165, 7, 6);
+    text-shadow: 1px 1px white;
 }
 
 #myProjects {
@@ -249,22 +248,20 @@ body{
 }
 
 #education {
-    background-image:url('/res/jumbotrons/education.jpg');
+    background-image: url('/res/jumbotrons/new-education.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x:65%;
-    background-position-y:20%;
     overflow: hidden;
 }
 
 #education h1{
     font-style: italic;
-    color: rgb(172, 65, 34);
+    color: rgb(72, 67, 67);
     background-color: rgba(252, 252, 252, 0.75);
-    padding: 5% 10% 10% 5%;
+    padding: 2% 5% 5% 5%;
     border-radius: 20px;
     position: relative;
-    top: 25rem;
+    top: 35rem;
 }
 
 #myEducation .container::-webkit-scrollbar {
@@ -280,17 +277,16 @@ body{
 }
 
 #experience {
-    background-image: url('/res/jumbotrons/experience.png');
+    background-image: url('/res/jumbotrons/new-experience.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y:50%;
-    background-position-x:50%;
+    background-position-x: 50%;
 }
 
 #experience h1{
     font-style: italic;
-    text-shadow:1px 1px white;
-    color:rgb(119,119,119);
+    text-shadow: 1px 1px black;
+    color: rgb(233, 233, 233);
 }
 
 @media screen and (max-width: 768px){
