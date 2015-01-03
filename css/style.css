@@ -151,6 +151,7 @@ body{
     background-image: url('/res/jumbotrons/new-projects.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x:80%; 
     color:black;
     font-style: italic;
 }
