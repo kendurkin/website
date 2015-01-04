@@ -82,6 +82,7 @@ body{
 
 .jumbotron .container {
   position: relative;
+  height: 100%;
 }
 
 .jumbotron h1 {
@@ -96,33 +97,49 @@ body{
     color:#FFF;
     background-position-y: 20%;
     background-position-x: 35%; 
-}
-
-#home .container{
-    top:50px;
-    padding-left: 5rem;
+    padding: 0;
 }
 
 #home h1{
+  position: relative;
   border-radius: 20px;
   background: rgba(0,0,0,0.5);
 }
 
-@media screen and (min-width:769px){
-  #home h1{
-    position:relative;
-    padding: 20px 20px;
-    float:left;
-    top:10rem;
-    left:5rem;
-    bottom: 10rem;
-    width:35%;
-  }
+@media screen and (max-width: 768px){
+    #home h1 {
+        top: 25rem;
+        left: 3rem;
+        font-size: 36px;
+        padding: 2%;
+        width: 50%;
+        text-align: center;
+    }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 769px){
+    #home h1 {
+        padding: 20px 20px;
+        top: 60%;
+        left: 0;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:991px){
     #home h1{
-        padding: 5% 10% 10% 5%;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    #home h1 {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #home h1 {
+        width: 50%;
     }
 }
 
@@ -135,7 +152,6 @@ body{
 .learn-more {
     background-color: #f7f7f7;
     position: relative;
-    margin-bottom: 30px;
 }
 
 .learn-more h3 {
@@ -162,10 +178,11 @@ body{
 }
 
 #projects h1 {
+position: relative;
+margin-top: 280px;
 border-radius: 20px;
 background: rgba(255, 255, 255, 0.5);
-width: 60%;
-padding: 1% 1% 1% 1%;
+padding: 2%;
 }
 
 #myProjects {
@@ -260,16 +277,34 @@ padding: 1% 1% 1% 1%;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    padding: 0;
 }
 
 #education h1{
     font-style: italic;
     color: rgb(72, 67, 67);
     background-color: rgba(252, 252, 252, 0.75);
-    padding: 2% 5% 5% 5%;
-    border-radius: 20px;
-    position: relative;
-    top: 35rem;
+    padding: 1% 0 1% 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+/*For small view*/
+@media screen and (max-width: 768px){
+    #education h1{
+        position: absolute;
+        margin: 0;
+        bottom: 0;
+        left: 15px;
+        right: 15px;
+    }
+}
+
+/*For large view*/
+@media screen and (min-width: 769px){
+    #education h1{
+        top: 415px;
+    }
 }
 
 #myEducation .container::-webkit-scrollbar {
@@ -288,7 +323,7 @@ padding: 1% 1% 1% 1%;
     background-image: url('/res/jumbotrons/new-experience.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: 50%;
+    background-position-x: 40%;
 }
 
 #experience h1{
@@ -300,19 +335,24 @@ padding: 1% 1% 1% 1%;
 @media screen and (max-width: 768px){
     #experience h1{
         position: relative;
-        //width: 300px;
-        top: -5rem;
-        //left: -5rem;
         font-size: 42px;
-        text-align: center;
     }
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 769px) and (max-width: 991px){
     #experience h1{
-        float: left;
-        width: 30rem;
-        padding-left: 5rem;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    #experience h1{
+        margin-left: 10%;
+    }
+}
+@media screen and (min-width: 1200px){
+    #experience h1{
+        margin-left: 15%;
     }
 }
 
