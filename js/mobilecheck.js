@@ -1,4 +1,4 @@
-window.onload=function(){
+$(document).ready(function(){
 	var isMobile = {
 	    Android: function() {
 	        return navigator.userAgent.match(/Android/i);
@@ -29,10 +29,22 @@ window.onload=function(){
 			$("#contact").removeClass("attach");
 		
 		    $(".desc").toggleClass("hovered");
+		    $(".jumbotron").css({height:500});
 		});
 	}
+	else {
+		var screenHeight = $(window).height() - 50;
+    	$('.jumbotron').css({ height: screenHeight });
+		screenHeight+=50;
+		$("#home.jumbotron").css({height: screenHeight });
 
-	var date = new Date();
+    	if (screenHeight < 500) {
+        	$('.jumbotron').css({ height: 500 });
+    	}
+	}
+});
+
+	/*var date = new Date();
     document.getElementById('greeting').innerHTML = getGreeting(date);
 
     function getGreeting(date){
@@ -45,5 +57,4 @@ window.onload=function(){
 	    	return "I'm a night owl too! What brings you to my site at " + date.toLocaleTimeString().replace(/:\d+ /, ' ') + "?";
 	    else
 	        return "Hope you have a great day today!";
-	}
-};
+	}*/
