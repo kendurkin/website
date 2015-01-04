@@ -319,18 +319,6 @@ padding: 2%;
     text-align: center;
 }
 
-#myEducation #extras {
-    margin-bottom: 20px;
-}
-
-#myEducation #extras .panel {
-    margin-bottom: 0;
-}
-
-#myEducation #extras ul {
-    margin-bottom: 0;
-}
-
 #experience {
     background-image: url('/res/jumbotrons/new-experience.jpg');
     background-repeat: no-repeat;
