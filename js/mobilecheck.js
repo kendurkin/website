@@ -33,12 +33,13 @@ $(document).ready(function(){
 		});
 	}
 	else {
-		var screenHeight = $(window).height() - 50;
-    	$('.jumbotron').css({ height: screenHeight });
-		screenHeight+=50;
-		$("#home.jumbotron").css({height: screenHeight });
+		var homeHeight = $(window).height();
+		$("#home.jumbotron").css({height: homeHeight });
 
-    	if (screenHeight < 500) {
+		var screenHeight = homeHeight - 50;
+		$(".jumbotron").not("#home.jumbotron").css({height: screenHeight });
+
+    	if (homeHeight < 500) {
         	$('.jumbotron').css({ height: 500 });
     	}
 	}

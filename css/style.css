@@ -84,14 +84,12 @@ body{
   height: 100%;
 }
 
-.jumbotron h1 {
-  font-size: 48px;  
-  font-weight: bold;
+.jumbotron h1{
+        font-size: 48px;
+        font-weight: bold;
 }
 
 #home {
-    position: relative;
-    top:50px;
     background-image: url('/res/jumbotrons/new-home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,18 +107,23 @@ body{
 
 @media screen and (max-width: 768px){
     #home h1 {
-        top: 25rem;
-        left: 3rem;
+        top: 50%;
+        left: 0;
         font-size: 36px;
         padding: 2%;
-        width: 50%;
+        width: 52%;
         text-align: center;
     }
 }
 
 @media screen and (min-width: 769px){
+    #home {
+        position: relative;
+        top:50px;
+    }
+
     #home h1 {
-        padding: 20px 20px;
+        padding: 15px 15px;
         top: 60%;
         left: 0;
     }
@@ -140,7 +143,7 @@ body{
 
 @media screen and (min-width: 1200px){
     #home h1 {
-        width: 50%;
+        width: 48%;
     }
 }
 
