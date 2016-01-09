@@ -90,7 +90,7 @@ body{
 }
 
 #home {
-    background-image: url('/res/jumbotrons/new-home.jpg');
+    background-image: url('../res/jumbotrons/new-home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color:#FFF;
@@ -168,7 +168,7 @@ body{
 }
 
 #projects {
-    background-image: url('/res/jumbotrons/new-projects.jpg');
+    background-image: url('../res/jumbotrons/new-projects.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x:80%; 
@@ -277,7 +277,7 @@ body{
 }
 
 #education {
-    background-image: url('/res/jumbotrons/new-education.png');
+    background-image: url('../res/jumbotrons/new-education.png');
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -350,7 +350,7 @@ body{
 }
 
 #experience {
-    background-image: url('/res/jumbotrons/new-experience.jpg');
+    background-image: url('../res/jumbotrons/new-experience.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 40%;
@@ -419,7 +419,7 @@ body{
 }
 
 #contact {
-    background-image: url('/res/jumbotrons/contact.jpg');
+    background-image: url('../res/jumbotrons/contact.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x:70%;
